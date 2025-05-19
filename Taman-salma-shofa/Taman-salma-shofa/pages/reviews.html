@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Taman Salma Shofa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reviews.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Taman Salma Shofa</h1>
+                <p>Tempat Liburan Keluarga</p>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Beranda</a>
+                <a href="reviews.html" class="active">Review</a>
+            </div>
+            <div class="user-actions">
+                <!-- This will be populated by auth.js -->
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="reviews-container">
+            <div class="reviews-header">
+                <h2>Ulasan Pengunjung</h2>
+                <p>Lihat apa kata pengunjung tentang Taman Salma Shofa</p>
+            </div>
+            
+            <div class="reviews-summary">
+                <div class="overall-rating">
+                    <div class="rating-value">0.0</div>
+                    <div class="rating-stars">☆☆☆☆☆</div>
+                    <div class="total-reviews">0 review</div>
+                </div>
+                
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <div class="rating-level">5 ★</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-fill-5" style="width: 0%"></div>
+                        </div>
+                        <div class="percentage percentage-5">0%</div>
+                    </div>
+                    
+                    <div class="rating-bar">
+                        <div class="rating-level">4 ★</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-fill-4" style="width: 0%"></div>
+                        </div>
+                        <div class="percentage percentage-4">0%</div>
+                    </div>
+                    
+                    <div class="rating-bar">
+                        <div class="rating-level">3 ★</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-fill-3" style="width: 0%"></div>
+                        </div>
+                        <div class="percentage percentage-3">0%</div>
+                    </div>
+                    
+                    <div class="rating-bar">
+                        <div class="rating-level">2 ★</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-fill-2" style="width: 0%"></div>
+                        </div>
+                        <div class="percentage percentage-2">0%</div>
+                    </div>
+                    
+                    <div class="rating-bar">
+                        <div class="rating-level">1 ★</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-fill-1" style="width: 0%"></div>
+                        </div>
+                        <div class="percentage percentage-1">0%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="writeReviewBtn" class="write-review-btn">Tulis Review</button>
+            
+            <div id="reviewFormContainer" class="review-form-container">
+                <h3 id="reviewFormTitle" class="review-form-title">Tulis Review Baru</h3>
+                <form id="reviewForm" class="review-form">
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="star-rating-select">
+                            <input type="radio" name="rating" id="star5" value="5">
+                            <label for="star5">★</label>
+                            
+                            <input type="radio" name="rating" id="star4" value="4">
+                            <label for="star4">★</label>
+                            
+                            <input type="radio" name="rating" id="star3" value="3">
+                            <label for="star3">★</label>
+                            
+                            <input type="radio" name="rating" id="star2" value="2">
+                            <label for="star2">★</label>
+                            
+                            <input type="radio" name="rating" id="star1" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewContent">Review Anda</label>
+                        <textarea id="reviewContent" class="review-input" placeholder="Bagaimana pengalaman Anda di Taman Salma Shofa?" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="cancelReviewBtn" class="cancel-btn">Batal</button>
+                        <button type="submit" id="submitReviewBtn" class="submit-btn">Kirim Review</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="reviews-list">
+                <!-- Reviews will be loaded by JavaScript -->
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Taman Salma Shofa. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/auth.js"></script>
+    <script src="../js/reviews.js"></script>
+</body>
+</html>

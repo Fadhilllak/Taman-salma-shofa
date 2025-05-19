@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Taman Salma Shofa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Taman Salma Shofa</h1>
+                <p>Tempat Liburan Keluarga</p>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Beranda</a>
+                <a href="reviews.html">Review</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Profile Container -->
+        <div id="profileContainer" class="profile-container">
+            <!-- Content will be loaded by JavaScript -->
+        </div>
+        
+        <!-- Edit Profile Modal -->
+        <div id="editProfileModal" class="modal">
+            <div class="modal-content">
+                <button id="closeModalBtn" class="modal-close">&times;</button>
+                <h3 class="modal-title">Edit Profil</h3>
+                
+                <form id="editProfileForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="editName">Nama Lengkap</label>
+                        <input type="text" id="editName" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" id="editEmail" placeholder="Masukkan email Anda" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editAvatar">URL Avatar (opsional)</label>
+                        <input type="url" id="editAvatar" placeholder="https://contoh.com/avatar.jpg">
+                        <small>Kosongkan untuk menggunakan avatar default</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editPassword">Password Baru (opsional)</label>
+                        <input type="password" id="editPassword" placeholder="Minimal 6 karakter">
+                        <small>Kosongkan jika tidak ingin mengganti password</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editConfirmPassword">Konfirmasi Password Baru</label>
+                        <input type="password" id="editConfirmPassword" placeholder="Ulangi password baru">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="cancelEditBtn" class="profile-btn secondary-btn">Batal</button>
+                        <button type="submit" class="profile-btn primary-btn">Simpan Perubahan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Taman Salma Shofa. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/auth.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

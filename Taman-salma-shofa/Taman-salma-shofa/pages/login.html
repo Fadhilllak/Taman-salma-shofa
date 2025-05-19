@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Taman Salma Shofa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/test.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Taman Salma Shofa</h1>
+                <p>Tempat Liburan Keluarga</p>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Beranda</a>
+                <a href="reviews.html">Review</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="auth-container">
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Masukkan email Anda" required>
+                    <span id="loginEmailError" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Masukkan password Anda" required>
+                    <span id="loginPasswordError" class="error-message"></span>
+                </div>
+                
+                <button type="submit" class="auth-btn">Login</button>
+                
+                <div class="auth-link">
+                    Belum punya akun? <a href="register.html">Daftar sekarang</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Taman Salma Shofa. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/auth.js"></script>
+</body>
+</html>
